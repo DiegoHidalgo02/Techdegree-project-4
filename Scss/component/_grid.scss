@@ -6,3 +6,13 @@
 .row{
     @include flexCenter(column);
 }
+
+[class^=col-]{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-basis: 100%;
+    min-height: 25px;
+}
+
+

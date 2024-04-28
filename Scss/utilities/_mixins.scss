@@ -1,9 +1,10 @@
 //mixin that center the content elements of a element 
 @mixin flexCenter($direction){
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1em 10px;
     flex-direction: $direction;
 }
 
-
+@mixin width100 {
+    width: 100%;
+}
