@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  padding: 0 10px;
+}
+
 .row {
   display: flex;
   align-items: center;
