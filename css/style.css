@@ -83,20 +83,39 @@ a {
   text-transform: uppercase;
 }
 
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
+/**
+ * This code block iterates over a Sass map variable called $state and generates CSS classes based on the keys and values of the map.
+ * Each generated CSS class will have a background-color property set to the corresponding value from the map.
+ *
+ * Example usage:
+ * $state: (
+ *   primary: #007bff,
+ *   secondary: #6c757d,
+ *   success: #28a745,
+ *   danger: #dc3545
+ * );
+ *
+ * @each $key - The key of the current item in the $state map.
+ * @each $value - The value of the current item in the $state map.
+ */
+.default {
+  background-color: #51ddfc;
 }
 
 .success {
   background-color: #63cc82;
 }
 
+.error {
+  background-color: #e4757a;
+}
+
 .warning {
   background-color: #fd7856;
+}
+
+.info {
+  background-color: #927bc1;
 }
 
 .form {

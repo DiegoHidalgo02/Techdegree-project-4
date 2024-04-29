@@ -9,8 +9,23 @@
     text-transform: uppercase;
 }
 
-@each $i in $list-state {
-    .#{$i} {
-        background-color: map-get($state, $i);
+/**
+ * This code block iterates over a Sass map variable called $state and generates CSS classes based on the keys and values of the map.
+ * Each generated CSS class will have a background-color property set to the corresponding value from the map.
+ *
+ * Example usage:
+ * $state: (
+ *   primary: #007bff,
+ *   secondary: #6c757d,
+ *   success: #28a745,
+ *   danger: #dc3545
+ * );
+ *
+ * @each $key - The key of the current item in the $state map.
+ * @each $value - The value of the current item in the $state map.
+ */
+@each $key, $value in $state {
+    .#{$key} {
+        background-color: $value;
     }
 }
