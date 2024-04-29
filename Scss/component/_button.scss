@@ -1,0 +1,10 @@
+.btn {
+    @include width100;
+    background-color: $secondary-color;
+    border: none;
+    color: $white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}

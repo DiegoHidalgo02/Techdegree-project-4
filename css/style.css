@@ -3,6 +3,13 @@ img {
   margin: 0 auto;
 }
 
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
 * {
   font-family: "Lato", sans-serif;
   color: #777;
@@ -63,6 +70,43 @@ a {
 }
 .nav-link:hover {
   background-color: #58e1c1;
+}
+
+.btn {
+  width: 100%;
+  background-color: #51ddfc;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.form {
+  flex-basis: 100%;
+}
+
+.input {
+  display: block;
+  position: relative;
+  width: 95%;
+  border: none;
+  border-bottom: 5px solid #58e1c1;
+  padding: 7px;
+  margin: 10px auto 0;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.img-avatar {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,9 @@
 img {
     @extend %img;
 }
+
+.img {
+    &-avatar {
+        margin-top: 10px;
+    }
+}
