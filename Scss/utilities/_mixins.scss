@@ -8,3 +8,7 @@
 @mixin width100 {
     width: 100%;
 }
+
+@mixin colors-btn($color){
+    background-color: map-get($state, $color);
+}

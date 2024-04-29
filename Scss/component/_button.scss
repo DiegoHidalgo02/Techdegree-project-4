@@ -8,3 +8,9 @@
     margin-top: 15px;
     text-transform: uppercase;
 }
+
+@each $i in $list-state {
+    .#{$i} {
+        background-color: map-get($state, $i);
+    }
+}
