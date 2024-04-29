@@ -6,4 +6,10 @@ img {
     &-avatar {
         margin-top: 10px;
     }
+    &-frame {
+        margin-top: 10px;
+        border: 1px solid $second-text-color;
+        padding: 13px;
+        max-width: 100%;
+    }
 }

@@ -108,5 +108,11 @@ a {
 .img-avatar {
   margin-top: 10px;
 }
+.img-frame {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 13px;
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
