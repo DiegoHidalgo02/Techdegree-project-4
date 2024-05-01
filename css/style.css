@@ -29,6 +29,11 @@ a {
   margin-left: 10px;
 }
 
+.headline-secondary {
+  color: #777;
+  font-weight: 300;
+}
+
 .link {
   font-weight: 700;
   color: #51ddfc;
