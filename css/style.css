@@ -1,4 +1,4 @@
-img {
+.img-logo, .img-frame, .img-avatar {
   display: block;
   margin: 0 auto;
 }

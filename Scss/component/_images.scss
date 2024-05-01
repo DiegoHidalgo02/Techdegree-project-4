@@ -1,15 +1,17 @@
-img {
-    @extend %img;
-}
 
 .img {
     &-avatar {
+        @extend %img;
         margin-top: 10px;
     }
     &-frame {
+        @extend %img;
         margin-top: 10px;
         border: 1px solid $second-text-color;
         padding: 13px;
         max-width: 100%;
+    }
+    &-logo{
+        @extend %img;
     }
 }
