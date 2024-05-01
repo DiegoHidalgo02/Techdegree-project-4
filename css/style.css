@@ -61,12 +61,17 @@ a {
   min-height: 25px;
 }
 
+.nav {
+  display: flex;
+  flex-direction: column;
+}
 .nav-link {
   display: block;
   text-align: center;
   width: 100%;
   padding: 10px 0;
   border-radius: 5px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .nav-link:hover {
   background-color: #58e1c1;
