@@ -112,20 +112,20 @@ a {
   background-color: #51ddfc;
 }
 
-.success {
-  background-color: #63cc82;
-}
-
 .error {
   background-color: #e4757a;
 }
 
-.warning {
-  background-color: #fd7856;
-}
-
 .info {
   background-color: #927bc1;
+}
+
+.success {
+  background-color: #63cc82;
+}
+
+.warning {
+  background-color: #fd7856;
 }
 
 .form {
