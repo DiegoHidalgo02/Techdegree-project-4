@@ -16,3 +16,10 @@
 }
 
 
+.theme {
+    @each $col, $color in $themes {
+        &#{$col} {
+            background-color: $color;
+        }
+    }
+}
