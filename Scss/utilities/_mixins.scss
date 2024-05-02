@@ -12,3 +12,8 @@
 @mixin colors-btn($color){
     background-color: map-get($state, $color);
 }
+
+@mixin img{
+    display: block;
+    margin: 0 auto;
+}
