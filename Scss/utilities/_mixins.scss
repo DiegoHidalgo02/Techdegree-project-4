@@ -13,7 +13,29 @@
     background-color: map-get($state, $color);
 }
 
-@mixin img{
-    display: block;
-    margin: 0 auto;
+
+@mixin centered{
+	display: block;
+	margin: 0 auto;
+}
+
+@mixin mq($break){
+    @if $break == "small"{
+		@media (min-width: map-get($breakpoints, $break)) and (max-width: map-get($breakpoints, medium)){
+			@content;
+		}
+	}
+	@else if $break == "medium"{
+		@media (min-width: map-get($breakpoints, $break)){
+			@content;
+		}
+	}
+	@else if $break == "large" {
+		@media (min-width: map-get($breakpoints, $break)){
+			@content;
+		}
+	}
+	@else {
+		@error "Whoops, No value could be retriveved for `#{$break}`"
+	}
 }
