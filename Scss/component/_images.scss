@@ -1,16 +1,16 @@
 .img {
     &-avatar {
-        @include img;
+        @include centered;
         margin-top: 10px;
     }
     &-frame {
-        @include img;
+        @include centered;
         margin-top: 10px;
         border: 1px solid $second-text-color;
         padding: 13px;
         max-width: 100%;
     }
     &-logo{
-        @include img;
+        @include centered;
     }
 }
