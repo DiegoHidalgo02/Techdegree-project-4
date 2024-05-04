@@ -9,8 +9,19 @@
         padding: 10px 0;
         border-radius: 5px;
         transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+        @include mq(medium){
+            flex-basis: 100px;
+        }
+
         &:hover {
             background-color: $primary-color;
         }
+    }
+
+    @include mq(medium){
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
     }
 }
