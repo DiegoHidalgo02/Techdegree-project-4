@@ -1,0 +1,3 @@
+@function flex-layout($cols, $iterator:null){
+    @return (100% / $cols) * $iterator;
+}

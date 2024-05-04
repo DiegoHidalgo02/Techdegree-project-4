@@ -9,6 +9,9 @@
 
 .row{
     @include flexCenter(column);
+    @include mq(medium){
+        flex-direction: row;
+    }
 }
 
 [class^=col-]{
@@ -40,4 +43,11 @@
     }
 }
 
-
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include mq(medium){
+            flex-basis: flex-layout(12, $i);
+        }
+        
+    }
+}
