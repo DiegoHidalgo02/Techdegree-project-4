@@ -623,5 +623,11 @@ a {
   display: block;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .img-logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

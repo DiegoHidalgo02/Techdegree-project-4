@@ -12,5 +12,9 @@
     }
     &-logo{
         @include centered;
+        @include mq(medium){
+            margin-left: initial;
+            margin-right: initial;
+        }
     }
 }
