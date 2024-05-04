@@ -6,6 +6,11 @@
     }
 }
 
+.centered {
+    @include mq(medium){
+        @include centered;
+    }
+}
 
 .row{
     @include flexCenter(column);
@@ -40,11 +45,7 @@
     }
 }
 
-.centered {
-    @include mq(medium){
-        @include centered;
-    }
-}
+
 
 @for $i from 1 through 12 {
     .col-#{$i} {
