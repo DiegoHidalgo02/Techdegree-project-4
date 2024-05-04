@@ -505,6 +505,14 @@ a {
 .nav {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .nav-link {
   display: block;
@@ -521,13 +529,7 @@ a {
 }
 .nav-link:hover {
   background-color: #58e1c1;
-}
-@media (min-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  color: #fff;
 }
 
 .btn {

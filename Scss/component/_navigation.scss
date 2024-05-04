@@ -2,6 +2,13 @@
 .nav {
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
+    @include mq(medium){
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     &-link {
         display: block;
         text-align: center;
@@ -16,12 +23,8 @@
 
         &:hover {
             background-color: $primary-color;
+            color: $white;
         }
     }
 
-    @include mq(medium){
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
 }
