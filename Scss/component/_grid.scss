@@ -1,5 +1,9 @@
 .container {
     padding: 0 10px;
+    @include mq(medium){
+        max-width: 1400px;
+        @include centered;
+    }
 }
 
 
@@ -13,6 +17,12 @@
     border-radius: 5px;
     flex-basis: 100%;
     min-height: 25px;
+    @include mq(medium){
+
+        & + & {
+            margin-left: 10px;
+        }
+    }
 }
 
 
@@ -23,3 +33,11 @@
         }
     }
 }
+
+.centered {
+    @include mq(medium){
+        @include centered;
+    }
+}
+
+

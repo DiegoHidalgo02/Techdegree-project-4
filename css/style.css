@@ -348,6 +348,13 @@ a {
 .container {
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 .row {
   display: flex;
@@ -361,6 +368,11 @@ a {
   border-radius: 5px;
   flex-basis: 100%;
   min-height: 25px;
+}
+@media (min-width: 768px) {
+  [class^=col-] + [class^=col-] {
+    margin-left: 10px;
+  }
 }
 
 .theme.col-1 {
@@ -398,6 +410,13 @@ a {
 }
 .theme.col-12 {
   background-color: #80e8d1;
+}
+
+@media (min-width: 768px) {
+  .centered {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .nav {
