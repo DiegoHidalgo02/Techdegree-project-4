@@ -34,5 +34,6 @@
 @each $key, $value in $state {
     .#{$key} {
         background-color: $value;
+        @include lighten_hover($key);
     }
 }

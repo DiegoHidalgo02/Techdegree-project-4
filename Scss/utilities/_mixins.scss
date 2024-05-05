@@ -3,21 +3,21 @@
     display: flex;
     padding: 1em 10px;
     flex-direction: $direction;
-}
+};
 
 @mixin width100 {
     width: 100%;
-}
+};
 
 @mixin colors-btn($color){
     background-color: map-get($state, $color);
-}
+};
 
 
 @mixin centered{
 	display: block;
 	margin: 0 auto;
-}
+};
 
 @mixin mq($break){
     @if $break == "small"{
@@ -37,5 +37,11 @@
 	}
 	@else {
 		@error "Whoops, No value could be retriveved for `#{$break}`"
+	}
+};
+
+@mixin lighten_hover($color){
+	&:hover{
+		background-color: lighten(map-get($state, $color), 10%);
 	}
 }
